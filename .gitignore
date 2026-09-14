@@ -1,0 +1,48 @@
+## --- .NET & C# Build Outputs ---
+[Bb]in/
+[Oo]bj/
+out/
+msvc/
+
+## --- User-Specific & IDE Files ---
+# Visual Studio
+.vs/
+*.user
+*.userosscache
+*.sln.docstates
+
+# Visual Studio Code
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
+
+## --- Test Results & Coverage ---
+TestResults/
+*.trx
+*.coverage
+*.coveragexml
+
+## --- OS Generated Files ---
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+## --- Temporary / Cache Files ---
+*.log
+*.tmp
+*.temp
+*.cache
+
+## --- Docker / Container Artifacts ---
+# Ignores local container state logs if generated locally
+.docker/

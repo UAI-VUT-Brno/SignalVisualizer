@@ -1,0 +1,36 @@
+﻿<Window x:Class="SignalVisualizer.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:ScottPlot="clr-namespace:ScottPlot.WPF;assembly=ScottPlot.WPF"
+        Title="Signal Generator" Height="450" Width="800">
+    <Grid Margin="10">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="220"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <!-- Left Controls Panel -->
+        <StackPanel Grid.Column="0" Margin="0,0,10,0">
+            <TextBlock Text="Signal Parameters" FontWeight="Bold" Margin="0,0,0,10"/>
+            
+            <TextBlock Text="Amplitude 1:"/>
+            <TextBox x:Name="TxtAmp1" Text="1.0" Margin="0,0,0,5"/>
+            
+            <TextBlock Text="Frequency 1 (Hz):"/>
+            <TextBox x:Name="TxtFreq1" Text="5.0" Margin="0,0,0,10"/>
+
+            <TextBlock Text="Amplitude 2:"/>
+            <TextBox x:Name="TxtAmp2" Text="0.5" Margin="0,0,0,5"/>
+            
+            <TextBlock Text="Frequency 2 (Hz):"/>
+            <TextBox x:Name="TxtFreq2" Text="20.0" Margin="0,0,0,15"/>
+
+            <Button x:Name="BtnPlay" Content="Play / Start" Click="BtnPlay_Click" Margin="0,0,0,5" Height="30"/>
+            <Button x:Name="BtnPause" Content="Pause" Click="BtnPause_Click" Margin="0,0,0,5" Height="30"/>
+            <Button x:Name="BtnReset" Content="Reset" Click="BtnReset_Click" Height="30"/>
+        </StackPanel>
+
+        <!-- Right Graph View -->
+        <ScottPlot:WpfPlot x:Name="WpfPlot1" Grid.Column="1"/>
+    </Grid>
+</Window>
