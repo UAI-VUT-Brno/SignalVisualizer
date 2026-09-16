@@ -25,8 +25,14 @@ A C# WPF application designed to simulate and visualize composite periodic signa
 ### 1. Clone the Repository
 
 ```bash
-git clone [https://github.com/UAI-VUT-Brno/SignalVisualizer.git](https://github.com/UAI-VUT-Brno/SignalVisualizer.git)
+git clone https://github.com/UAI-VUT-Brno/SignalVisualizer.git
 cd SignalVisualizer
+```
+
+### 2. Run the Application
+
+```bash
+dotnet run --project src/SignalVisualizer
 ```
 
 ## Next Steps - Dataset
