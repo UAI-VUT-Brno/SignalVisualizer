@@ -16,6 +16,7 @@ class Program
 
         Console.WriteLine("=== Educational Calculator (Console C#) ===");
         Console.WriteLine("Enter an expression (e.g., (8+4.3)*9.07 or abs(-5)):");
+        Console.WriteLine("Supports +, -, *, /, parentheses, and built-in functions abs() and sqrt().");
         Console.WriteLine("Press Enter on an empty line to exit.\n");
 
         var calculator = new CalculatorEngine();
